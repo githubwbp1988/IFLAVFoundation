@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		2014B2A02875BC8500AAB7EA /* IFLBaseCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B29F2875BC8500AAB7EA /* IFLBaseCameraController.m */; };
 		2014B2A32876038000AAB7EA /* NSFileManager+IFLCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2A22876038000AAB7EA /* NSFileManager+IFLCat.m */; };
-		2014B2A828783AD700AAB7EA /* IFLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2A728783AD700AAB7EA /* IFLPreviewView.m */; };
-		2014B2AB28783FCA00AAB7EA /* IFLCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2AA28783FCA00AAB7EA /* IFLCameraController.m */; };
+		2014B2A828783AD700AAB7EA /* IFLBasePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2A728783AD700AAB7EA /* IFLBasePreviewView.m */; };
+		2014B2AB28783FCA00AAB7EA /* IFLFaceCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2AA28783FCA00AAB7EA /* IFLFaceCameraController.m */; };
 		205A31BE285F9F3600F0DB45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31BD285F9F3600F0DB45 /* AppDelegate.m */; };
 		205A31C1285F9F3600F0DB45 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31C0285F9F3600F0DB45 /* SceneDelegate.m */; };
 		205A31C4285F9F3600F0DB45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31C3285F9F3600F0DB45 /* ViewController.m */; };
@@ -18,6 +18,9 @@
 		205A31C9285F9F3800F0DB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205A31C8285F9F3800F0DB45 /* Assets.xcassets */; };
 		205A31CC285F9F3800F0DB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205A31CA285F9F3800F0DB45 /* LaunchScreen.storyboard */; };
 		205A31CF285F9F3800F0DB45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31CE285F9F3800F0DB45 /* main.m */; };
+		205A3556287887F6005610DE /* IFLFacePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A3555287887F6005610DE /* IFLFacePreviewView.m */; };
+		205A355928788C44005610DE /* IFLCodeCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A355828788C44005610DE /* IFLCodeCameraController.m */; };
+		205A355C287892F7005610DE /* IFLCodePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A355B287892F7005610DE /* IFLCodePreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +28,10 @@
 		2014B29F2875BC8500AAB7EA /* IFLBaseCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLBaseCameraController.m; sourceTree = "<group>"; };
 		2014B2A12876038000AAB7EA /* NSFileManager+IFLCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+IFLCat.h"; sourceTree = "<group>"; };
 		2014B2A22876038000AAB7EA /* NSFileManager+IFLCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+IFLCat.m"; sourceTree = "<group>"; };
-		2014B2A628783AD700AAB7EA /* IFLPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLPreviewView.h; sourceTree = "<group>"; };
-		2014B2A728783AD700AAB7EA /* IFLPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLPreviewView.m; sourceTree = "<group>"; };
-		2014B2A928783FCA00AAB7EA /* IFLCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLCameraController.h; sourceTree = "<group>"; };
-		2014B2AA28783FCA00AAB7EA /* IFLCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLCameraController.m; sourceTree = "<group>"; };
+		2014B2A628783AD700AAB7EA /* IFLBasePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLBasePreviewView.h; sourceTree = "<group>"; };
+		2014B2A728783AD700AAB7EA /* IFLBasePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLBasePreviewView.m; sourceTree = "<group>"; };
+		2014B2A928783FCA00AAB7EA /* IFLFaceCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLFaceCameraController.h; sourceTree = "<group>"; };
+		2014B2AA28783FCA00AAB7EA /* IFLFaceCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLFaceCameraController.m; sourceTree = "<group>"; };
 		205A31B9285F9F3600F0DB45 /* IFLAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFLAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205A31BC285F9F3600F0DB45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		205A31BD285F9F3600F0DB45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,6 +44,12 @@
 		205A31CB285F9F3800F0DB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205A31CD285F9F3800F0DB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		205A31CE285F9F3800F0DB45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		205A3554287887F6005610DE /* IFLFacePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLFacePreviewView.h; sourceTree = "<group>"; };
+		205A3555287887F6005610DE /* IFLFacePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLFacePreviewView.m; sourceTree = "<group>"; };
+		205A355728788C44005610DE /* IFLCodeCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLCodeCameraController.h; sourceTree = "<group>"; };
+		205A355828788C44005610DE /* IFLCodeCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLCodeCameraController.m; sourceTree = "<group>"; };
+		205A355A287892F7005610DE /* IFLCodePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLCodePreviewView.h; sourceTree = "<group>"; };
+		205A355B287892F7005610DE /* IFLCodePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLCodePreviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +68,10 @@
 			children = (
 				2014B29E2875BC8500AAB7EA /* IFLBaseCameraController.h */,
 				2014B29F2875BC8500AAB7EA /* IFLBaseCameraController.m */,
-				2014B2A928783FCA00AAB7EA /* IFLCameraController.h */,
-				2014B2AA28783FCA00AAB7EA /* IFLCameraController.m */,
+				2014B2A928783FCA00AAB7EA /* IFLFaceCameraController.h */,
+				2014B2AA28783FCA00AAB7EA /* IFLFaceCameraController.m */,
+				205A355728788C44005610DE /* IFLCodeCameraController.h */,
+				205A355828788C44005610DE /* IFLCodeCameraController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -77,8 +88,12 @@
 		2014B2A528783AB500AAB7EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2014B2A628783AD700AAB7EA /* IFLPreviewView.h */,
-				2014B2A728783AD700AAB7EA /* IFLPreviewView.m */,
+				2014B2A628783AD700AAB7EA /* IFLBasePreviewView.h */,
+				2014B2A728783AD700AAB7EA /* IFLBasePreviewView.m */,
+				205A3554287887F6005610DE /* IFLFacePreviewView.h */,
+				205A3555287887F6005610DE /* IFLFacePreviewView.m */,
+				205A355A287892F7005610DE /* IFLCodePreviewView.h */,
+				205A355B287892F7005610DE /* IFLCodePreviewView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,14 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2014B2AB28783FCA00AAB7EA /* IFLCameraController.m in Sources */,
+				2014B2AB28783FCA00AAB7EA /* IFLFaceCameraController.m in Sources */,
 				205A31C4285F9F3600F0DB45 /* ViewController.m in Sources */,
 				2014B2A02875BC8500AAB7EA /* IFLBaseCameraController.m in Sources */,
+				205A355C287892F7005610DE /* IFLCodePreviewView.m in Sources */,
 				205A31BE285F9F3600F0DB45 /* AppDelegate.m in Sources */,
-				2014B2A828783AD700AAB7EA /* IFLPreviewView.m in Sources */,
+				2014B2A828783AD700AAB7EA /* IFLBasePreviewView.m in Sources */,
 				205A31CF285F9F3800F0DB45 /* main.m in Sources */,
 				205A31C1285F9F3600F0DB45 /* SceneDelegate.m in Sources */,
+				205A3556287887F6005610DE /* IFLFacePreviewView.m in Sources */,
 				2014B2A32876038000AAB7EA /* NSFileManager+IFLCat.m in Sources */,
+				205A355928788C44005610DE /* IFLCodeCameraController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

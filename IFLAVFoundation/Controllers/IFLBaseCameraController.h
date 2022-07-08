@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+FOUNDATION_EXPORT NSString *const IFLCameraErrorDomain;
+FOUNDATION_EXPORT NSString *const IFLThumbnailCreatedNotification;
+
 @protocol IFLCameraControllerDelegate <NSObject>
 
 // 发生错误事件是，需要在对象委托上调用一些方法来处理
@@ -19,6 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+typedef NS_ENUM(NSInteger, IFLCameraErrorCode) {
+    IFLCameraErrorFailedToAddInput = 98,
+    IFLCameraErrorFailedToAddOutput,
+};
+
 @interface IFLBaseCameraController : NSObject
 
 @property(nonatomic, weak)id<IFLCameraControllerDelegate> delegate;
@@ -26,9 +34,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)AVCaptureSession *captureSession;           // 捕捉会话
 @property(nonatomic, strong)AVCaptureDeviceInput *activeVideoInput;     //
 
+@property(nonatomic, readonly)NSUInteger cameraCount;
+@property(nonatomic, readonly)AVCaptureDevice *activeCamera;
+
 - (BOOL)setupSession:(NSError **)error;
 - (void)startSession;
 - (void)stopSession;
+
+// Override Hooks
+- (BOOL)setupSessionInputs:(NSError **)error;
+- (BOOL)setupSessionOutputs:(NSError **)error;
+- (NSString *)sessionPreset;
 
 - (BOOL)switchCamera;
 - (BOOL)canSwitchCamera;

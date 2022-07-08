@@ -10,6 +10,9 @@
 #import "IFLBaseCameraController.h"
 #import "NSFileManager+IFLCat.h"
 
+NSString *const IFLCameraErrorDomain = @"com.ifl.IFLCameraErrorDomain";
+NSString *const IFLThumbnailCreatedNotification = @"IFLThumbnailCreated";
+
 @interface IFLBaseCameraController () <AVCapturePhotoCaptureDelegate, AVCaptureFileOutputRecordingDelegate>
 
 //@property(nonatomic, strong)AVCapturePhotoOutput *imageOutput;
@@ -163,6 +166,50 @@
     dispatch_async(self.videoQueue, ^{
         [self.captureSession stopRunning];
     });
+}
+
+- (BOOL)setupSessionInputs:(NSError **)error {
+    // Set up default camera device
+    AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+
+    AVCaptureDeviceInput *videoInput = [AVCaptureDeviceInput deviceInputWithDevice:videoDevice error:error];
+    if (videoInput) {
+        if ([self.captureSession canAddInput:videoInput]) {
+            [self.captureSession addInput:videoInput];
+            self.activeVideoInput = videoInput;
+        } else {
+            NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"Failed to add video input."};
+            *error = [NSError errorWithDomain:IFLCameraErrorDomain
+                                         code:IFLCameraErrorFailedToAddInput
+                                     userInfo:userInfo];
+            return NO;
+        }
+    } else {
+        return NO;
+    }
+
+    return YES;
+}
+
+- (BOOL)setupSessionOutputs:(NSError **)error {
+    // Setup the still image output
+    self.imageOutput = [[AVCaptureStillImageOutput alloc] init];
+    // self.imageOutput.outputSettings = @{AVVideoCodecKey : AVVideoCodecJPEG};
+
+    if ([self.captureSession canAddOutput:self.imageOutput]) {
+        [self.captureSession addOutput:self.imageOutput];
+    } else {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"Failed to still image output."};
+        *error = [NSError errorWithDomain:IFLCameraErrorDomain
+                                     code:IFLCameraErrorFailedToAddOutput
+                                 userInfo:userInfo];
+        return NO;
+    }
+    return YES;
+}
+
+- (NSString *)sessionPreset {
+    return AVCaptureSessionPresetHigh;
 }
 
 #pragma mark - Device Configuration   配置摄像头支持的方法

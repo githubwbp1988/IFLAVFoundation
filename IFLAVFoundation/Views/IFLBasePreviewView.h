@@ -1,5 +1,5 @@
 //
-//  IFLPreviewView.h
+//  IFLBasePreviewView.h
 //  IFLAVFoundation
 //
 //  Created by erlich wang on 2022/7/8.
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface IFLPreviewView : UIView
+@interface IFLBasePreviewView : UIView
 
 // session用来关联AVCaptureVideoPreviewLayer 和 激活AVCaptureSession
 @property(nonatomic, strong)AVCaptureSession *session;

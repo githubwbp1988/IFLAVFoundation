@@ -1,20 +1,20 @@
 //
-//  IFLCameraController.m
+//  IFLFaceCameraController.m
 //  IFLAVFoundation
 //
 //  Created by erlich wang on 2022/7/8.
 //
 
 #import <UIKit/UIGeometry.h>
-#import "IFLCameraController.h"
+#import "IFLFaceCameraController.h"
 
-@interface IFLCameraController () <AVCaptureMetadataOutputObjectsDelegate>
+@interface IFLFaceCameraController () <AVCaptureMetadataOutputObjectsDelegate>
 
 @property(nonatomic, strong)AVCaptureMetadataOutput *metaDataOutput;
 
 @end
 
-@implementation IFLCameraController
+@implementation IFLFaceCameraController
 
 - (BOOL)setupSessionOutputs:(NSError **)error {
     

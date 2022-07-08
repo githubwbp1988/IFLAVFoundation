@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface IFLCameraController : IFLBaseCameraController
+@interface IFLFaceCameraController : IFLBaseCameraController
 
 @property(nonatomic, weak) id<IFLFaceDetectionDelegate> faceDetectionDelegate;
 
