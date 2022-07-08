@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2014B2A02875BC8500AAB7EA /* IFLBaseCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B29F2875BC8500AAB7EA /* IFLBaseCameraController.m */; };
+		2014B2A32876038000AAB7EA /* NSFileManager+IFLCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2A22876038000AAB7EA /* NSFileManager+IFLCat.m */; };
+		2014B2A828783AD700AAB7EA /* IFLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2A728783AD700AAB7EA /* IFLPreviewView.m */; };
+		2014B2AB28783FCA00AAB7EA /* IFLCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014B2AA28783FCA00AAB7EA /* IFLCameraController.m */; };
+		205A31BE285F9F3600F0DB45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31BD285F9F3600F0DB45 /* AppDelegate.m */; };
+		205A31C1285F9F3600F0DB45 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31C0285F9F3600F0DB45 /* SceneDelegate.m */; };
+		205A31C4285F9F3600F0DB45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31C3285F9F3600F0DB45 /* ViewController.m */; };
+		205A31C7285F9F3600F0DB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205A31C5285F9F3600F0DB45 /* Main.storyboard */; };
+		205A31C9285F9F3800F0DB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205A31C8285F9F3800F0DB45 /* Assets.xcassets */; };
+		205A31CC285F9F3800F0DB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205A31CA285F9F3800F0DB45 /* LaunchScreen.storyboard */; };
+		205A31CF285F9F3800F0DB45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A31CE285F9F3800F0DB45 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2014B29E2875BC8500AAB7EA /* IFLBaseCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLBaseCameraController.h; sourceTree = "<group>"; };
+		2014B29F2875BC8500AAB7EA /* IFLBaseCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLBaseCameraController.m; sourceTree = "<group>"; };
+		2014B2A12876038000AAB7EA /* NSFileManager+IFLCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+IFLCat.h"; sourceTree = "<group>"; };
+		2014B2A22876038000AAB7EA /* NSFileManager+IFLCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+IFLCat.m"; sourceTree = "<group>"; };
+		2014B2A628783AD700AAB7EA /* IFLPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLPreviewView.h; sourceTree = "<group>"; };
+		2014B2A728783AD700AAB7EA /* IFLPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLPreviewView.m; sourceTree = "<group>"; };
+		2014B2A928783FCA00AAB7EA /* IFLCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFLCameraController.h; sourceTree = "<group>"; };
+		2014B2AA28783FCA00AAB7EA /* IFLCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLCameraController.m; sourceTree = "<group>"; };
+		205A31B9285F9F3600F0DB45 /* IFLAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFLAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		205A31BC285F9F3600F0DB45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		205A31BD285F9F3600F0DB45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		205A31BF285F9F3600F0DB45 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		205A31C0285F9F3600F0DB45 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		205A31C2285F9F3600F0DB45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		205A31C3285F9F3600F0DB45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		205A31C6285F9F3600F0DB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		205A31C8285F9F3800F0DB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		205A31CB285F9F3800F0DB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		205A31CD285F9F3800F0DB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205A31CE285F9F3800F0DB45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		205A31B6285F9F3600F0DB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2014B29D2875BC5900AAB7EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2014B29E2875BC8500AAB7EA /* IFLBaseCameraController.h */,
+				2014B29F2875BC8500AAB7EA /* IFLBaseCameraController.m */,
+				2014B2A928783FCA00AAB7EA /* IFLCameraController.h */,
+				2014B2AA28783FCA00AAB7EA /* IFLCameraController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2014B2A428760C8900AAB7EA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2014B2A12876038000AAB7EA /* NSFileManager+IFLCat.h */,
+				2014B2A22876038000AAB7EA /* NSFileManager+IFLCat.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2014B2A528783AB500AAB7EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2014B2A628783AD700AAB7EA /* IFLPreviewView.h */,
+				2014B2A728783AD700AAB7EA /* IFLPreviewView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		205A31B0285F9F3600F0DB45 = {
+			isa = PBXGroup;
+			children = (
+				205A31BB285F9F3600F0DB45 /* IFLAVFoundation */,
+				205A31BA285F9F3600F0DB45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		205A31BA285F9F3600F0DB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				205A31B9285F9F3600F0DB45 /* IFLAVFoundation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		205A31BB285F9F3600F0DB45 /* IFLAVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				2014B2A528783AB500AAB7EA /* Views */,
+				2014B2A428760C8900AAB7EA /* Categories */,
+				2014B29D2875BC5900AAB7EA /* Controllers */,
+				205A31BC285F9F3600F0DB45 /* AppDelegate.h */,
+				205A31BD285F9F3600F0DB45 /* AppDelegate.m */,
+				205A31BF285F9F3600F0DB45 /* SceneDelegate.h */,
+				205A31C0285F9F3600F0DB45 /* SceneDelegate.m */,
+				205A31C2285F9F3600F0DB45 /* ViewController.h */,
+				205A31C3285F9F3600F0DB45 /* ViewController.m */,
+				205A31C5285F9F3600F0DB45 /* Main.storyboard */,
+				205A31C8285F9F3800F0DB45 /* Assets.xcassets */,
+				205A31CA285F9F3800F0DB45 /* LaunchScreen.storyboard */,
+				205A31CD285F9F3800F0DB45 /* Info.plist */,
+				205A31CE285F9F3800F0DB45 /* main.m */,
+			);
+			path = IFLAVFoundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		205A31B8285F9F3600F0DB45 /* IFLAVFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 205A31D2285F9F3800F0DB45 /* Build configuration list for PBXNativeTarget "IFLAVFoundation" */;
+			buildPhases = (
+				205A31B5285F9F3600F0DB45 /* Sources */,
+				205A31B6285F9F3600F0DB45 /* Frameworks */,
+				205A31B7285F9F3600F0DB45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IFLAVFoundation;
+			productName = IFLAVFoundation;
+			productReference = 205A31B9285F9F3600F0DB45 /* IFLAVFoundation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		205A31B1285F9F3600F0DB45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					205A31B8285F9F3600F0DB45 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 205A31B4285F9F3600F0DB45 /* Build configuration list for PBXProject "IFLAVFoundation" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 205A31B0285F9F3600F0DB45;
+			productRefGroup = 205A31BA285F9F3600F0DB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				205A31B8285F9F3600F0DB45 /* IFLAVFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		205A31B7285F9F3600F0DB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205A31CC285F9F3800F0DB45 /* LaunchScreen.storyboard in Resources */,
+				205A31C9285F9F3800F0DB45 /* Assets.xcassets in Resources */,
+				205A31C7285F9F3600F0DB45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		205A31B5285F9F3600F0DB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2014B2AB28783FCA00AAB7EA /* IFLCameraController.m in Sources */,
+				205A31C4285F9F3600F0DB45 /* ViewController.m in Sources */,
+				2014B2A02875BC8500AAB7EA /* IFLBaseCameraController.m in Sources */,
+				205A31BE285F9F3600F0DB45 /* AppDelegate.m in Sources */,
+				2014B2A828783AD700AAB7EA /* IFLPreviewView.m in Sources */,
+				205A31CF285F9F3800F0DB45 /* main.m in Sources */,
+				205A31C1285F9F3600F0DB45 /* SceneDelegate.m in Sources */,
+				2014B2A32876038000AAB7EA /* NSFileManager+IFLCat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		205A31C5285F9F3600F0DB45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				205A31C6285F9F3600F0DB45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		205A31CA285F9F3800F0DB45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				205A31CB285F9F3800F0DB45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		205A31D0285F9F3800F0DB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		205A31D1285F9F3800F0DB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		205A31D3285F9F3800F0DB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4WCYCBLB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IFLAVFoundation/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflamer.fork.IFLAVFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		205A31D4285F9F3800F0DB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4WCYCBLB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IFLAVFoundation/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflamer.fork.IFLAVFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		205A31B4285F9F3600F0DB45 /* Build configuration list for PBXProject "IFLAVFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				205A31D0285F9F3800F0DB45 /* Debug */,
+				205A31D1285F9F3800F0DB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		205A31D2285F9F3800F0DB45 /* Build configuration list for PBXNativeTarget "IFLAVFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				205A31D3285F9F3800F0DB45 /* Debug */,
+				205A31D4285F9F3800F0DB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 205A31B1285F9F3600F0DB45 /* Project object */;
+}
